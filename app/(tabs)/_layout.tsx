@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 
 export default function TabsLayout() {
@@ -18,6 +19,9 @@ export default function TabsLayout() {
         options={{
           title: 'Home',
           tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home-sharp" color={color} size={size} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -25,6 +29,9 @@ export default function TabsLayout() {
         options={{
           title: 'My Tasks',
           tabBarLabel: 'My Tasks',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="list-outline" color={color} size={size} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -32,6 +39,9 @@ export default function TabsLayout() {
         options={{
           title: 'Profile',
           tabBarLabel: 'Profile',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-circle-outline" color={color} size={size} />
+          ),
         }}
       />
     </Tabs>
