@@ -11,7 +11,7 @@ export default function RootLayout() {
         headerShadowVisible: false,
       }}
     >
-      <Stack.Screen name="index" options={{ title: 'Home' }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="groups/[id]" options={{ title: 'Group Details' }} />
     </Stack>
   );
