@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 
-export default function RootLayout() {
+export default function HomeStackLayout() {
   return (
     <Stack
       screenOptions={{
@@ -11,7 +11,7 @@ export default function RootLayout() {
         headerShadowVisible: false,
       }}
     >
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="index" options={{ title: "Home" }} />
       <Stack.Screen name="groups/[id]" options={{ title: "Group Details" }} />
     </Stack>
   );
