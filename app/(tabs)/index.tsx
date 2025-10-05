@@ -1,8 +1,8 @@
 import { Link } from 'expo-router';
 import { FlatList, Pressable, Text, View } from 'react-native';
-import { mockGroups } from './data/groups';
+import { mockGroups } from '../data/groups';
 
-export default function Index() {
+export default function HomeTab() {
   return (
     <View style={{ flex: 1, backgroundColor: '#0f172a' }}>
       <View style={{ paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8 }}>
